@@ -1,6 +1,7 @@
 
 * todo
   - add trigers for ids (see comments in scripts)
+  - slide 9 (second part)
 
 * task
 Please write an SQL query:
