@@ -20,12 +20,15 @@ Please write an SQL query:
 - **create countries and users tables**. Run script `create-tables.sql`. It will create 2 tables, primary and foreign keys.
 - **insert countries**. I will insert only 10 countries for this example. Run script `insert-countries.sql`.
 - **insert users**.
-  - **TBD**: generate 1000 users (sql script or node.js)
-  - insert 24 hard-coded users, run script `insert-users.sql`
+  - generate 40000 random users. Script is not perfect and have comments about what should be improved. In real project I would use `mariasql` node module and generate better emails with `faker.js`, eventhough it will be slower.
+  - insert 24 hard-coded users, can be used for debug and manualy check. Run script `insert-users.sql`
 
 ## query
 - run script `query.sql`
-  - if you inserted only 24 users - update condition in the script and replace 1000 with smaller value, e.g. 4.
+  - if you inserted only 24 users - update condition in the script and replace 1000 with smaller value, e.g. 3 or 4.
+  - you can verify script result for each country and get number of citizens, e.g.:
+  `select count(*) from users where citizenship_country_id = <country id here>;`
 
 ## info
   - [iso codes](https://www.wikiwand.com/en/List_of_ISO_3166_country_codes)
+  - [random names](http://listofrandomnames.com/index.cfm?generated)
