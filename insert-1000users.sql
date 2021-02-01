@@ -1,10 +1,15 @@
+-- what should be improved:
+  -- contries count is hardcoded, instead of select count(*) into @countries_count from countries;
+  -- random should use seed
+  -- names generation should be improved
+
 DELIMITER //
 
--- SELECT count(*) INTO @max_countries FROM countries;
-
--- FOR i IN 1..@max_countries
-FOR i IN 1..3
+FOR i IN 1..40000
 DO
-    INSERT INTO users(email, citizenship_country_id) VALUES ('tim@gmail.com', 1);
+    SELECT LEFT(UUID(), 8) INTO @name;
+    SELECT FLOOR(1 + RAND() * 10 ) INTO @country_id;
+   
+    INSERT INTO users(email, citizenship_country_id) VALUES (CONCAT(@name, '@gmail.com'), @country_id);
 END FOR;
 //
