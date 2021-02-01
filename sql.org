@@ -1,22 +1,8 @@
-
 * todo
-  - add trigers for ids (see comments in scripts)
   - slide 9 (second part)
-
-* task
-Please write an SQL query:
-  - Table "users" with columns (id, email, citizenship_country_id)
-  - Table "countries" with columns (id, name, iso)
-  - Show all countries with more than 1000 users, sorted by user count. The country with the most users should be at the top.
 
 * start mariadb
   - mysql docker: [[https://hub.docker.com/_/mysql]]
-  - docker-compose up
-  - download and start any DB client, e.g. DBeaver [[https://dbeaver.io/]]
 
 * info
-  - sql
-    - [[https://mariadb.com/kb/en/create-database/]]
-    - 
-  - iso codes [[https://www.wikiwand.com/en/List_of_ISO_3166_country_codes]]
   - names: [[http://listofrandomnames.com/index.cfm?generated]]
