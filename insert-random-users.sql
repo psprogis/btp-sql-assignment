@@ -1,7 +1,7 @@
 -- what should be improved:
-  -- contries count is hardcoded, instead of select count(*) into @countries_count from countries;
+  -- countries count is hardcoded, instead of select count(*) into @countries_count from countries;
   -- rand should use seed.
-  -- names generation should be improved, for now it is just first 8 characters from uuid.
+  -- names generation should be improved, for now, it is just the first 8 characters from UUID.
 
 DELIMITER //
 
