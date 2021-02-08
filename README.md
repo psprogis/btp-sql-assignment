@@ -15,7 +15,7 @@ Please write an SQL query:
   - you should have `docker` and `docker-compose` installed on your machine, run the following command at the root of the project:\
     `docker-compose up`\
     it will start `MariaDB` on `localhost`, port `3306`, root password - admin. In the real project, I would create a separate user with specific permissions, but for this test demo, it is ok.\
-    Make sure docker daemon (`dockerd`) is running before using `docker-compose` command.
+    **Make sure docker daemon (`dockerd`) is running before using `docker-compose` command.**
     ![maria db start](screenshots/docker-compose-up.png "maria db start")
 - **start client**. There is plenty of clients to connect to a relational database. Some of them have only command-line interface, but in this case, it would be easier to use GUI client - for example [DBeaver](https://dbeaver.io/)
 - **create test database**. Run `create-db.sql` script. It will drop `test_db` if it exists and creates the new one.
