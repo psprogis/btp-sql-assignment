@@ -6,9 +6,6 @@ Please write an SQL query:
 - Table `countries` with columns (`id`, `name`, `iso`)
 - Show all countries with more than 1000 users, sorted by user count. The country with the most users should be at the top.
 
-## notes
-- it is very unusual that we are using plural names for tables, e.g. "users" or "countries".
-
 ## setup
 - **start db**. I will use [MariaDB](https://mariadb.com/) in this example, but the query should work with MySQL also (maybe with small updates).
   - you can download and install `MariaDB` or `MySQL` on your desktop, but probably the easiest way is to start an existing docker image.
